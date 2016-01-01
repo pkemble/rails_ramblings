@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<h1>The Ramblings</h1>
+
+<div id="tag_cloud">
+	<% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
+		<%= link_to tag.name, tag_path(tag.name), class: css_class %>
+	<% end %>
+
+<% @posts.each do |post| %>
+<p>
+  <div><h3><%= link_to post.title, post %></h3></div>
+  <div><%= post.body %></div>
+  <div><%= raw post.tag_list.map { |t| link_to t, tag_path(t)}.join(", ")%></div>
+  <div><%= link_to 'Edit', edit_post_path(post) %> | <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+</p>
+<% end %>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>

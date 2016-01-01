@@ -1,0 +1,184 @@
+
+---
+posts:
+  columns:
+  - id
+  - title
+  - body
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - my step-daughter's birth
+    - 'as lived vicariously through my daughter''s birth. i feel i get to live through
+      what i wasn''t around for through my daughter''s birth. '
+    - '2015-12-29 03:54:15.253017'
+    - '2015-12-30 19:49:33.549503'
+  - - 2
+    - the birth of my daughter has not changed me
+    - as the two years i've had with my step-daughter already has. there was no 'i'm
+      a father now' epiphany with eleanor's birth, as madeline has already given me
+      that.
+    - '2015-12-29 03:55:57.369051'
+    - '2015-12-30 19:50:03.088085'
+  - - 3
+    - like mother like daughter
+    - two pieces of burnt toast - mom convinces madeline to give her the more burnt
+      piece, but madeline defiantly says no, but only as mom is dipping the piece
+      in her soup. "can i have this?" mom asks again with the same response, "no!
+      I want that piece to be mine!" but defiant mom asks, "so I can't have this?"
+      mom knows there's another piece that madeline most likely won't even get all
+      the way through. "no no no!" madeline protests further as mom gives in and gives
+      the burnt toast to madeline. madeline then wants mom to eat the part that was
+      dipped in the soup, which mom does. madeline then eats the toast, clearly not
+      enjoying it, but she defiantly continues, despite the charred taste. like mother
+      like daughter.
+    - '2015-12-30 15:12:40.151486'
+    - '2015-12-30 19:50:31.528230'
+  - - 4
+    - dance
+    - shimmy
+    - '2015-12-30 16:04:28.559064'
+    - '2015-12-30 16:04:28.559064'
+
+---
+tags:
+  columns:
+  - id
+  - name
+  - taggings_count
+  records: 
+  - - 1
+    - she sha shi
+    - 1
+  - - 2
+    - birth
+    - 2
+  - - 3
+    - family
+    - 2
+  - - 4
+    - madeline
+    - 2
+  - - 5
+    - eleanor
+    - 2
+  - - 6
+    - reactions
+    - 1
+  - - 7
+    - defiance
+    - 0
+  - - 8
+    - attitude
+    - 0
+  - - 9
+    - abby
+    - 0
+  - - 10
+    - food
+    - 0
+  - - 11
+    - defiance attitude madeline abby food
+    - 1
+
+---
+taggings:
+  columns:
+  - id
+  - tag_id
+  - taggable_id
+  - taggable_type
+  - tagger_id
+  - tagger_type
+  - context
+  - created_at
+  records: 
+  - - 1
+    - 1
+    - 4
+    - Post
+    - 
+    - 
+    - tags
+    - '2015-12-30 16:04:28.981065'
+  - - 2
+    - 2
+    - 1
+    - Post
+    - 
+    - 
+    - tags
+    - '2015-12-30 19:49:33.568350'
+  - - 3
+    - 3
+    - 1
+    - Post
+    - 
+    - 
+    - tags
+    - '2015-12-30 19:49:33.575931'
+  - - 4
+    - 4
+    - 1
+    - Post
+    - 
+    - 
+    - tags
+    - '2015-12-30 19:49:33.581909'
+  - - 5
+    - 5
+    - 1
+    - Post
+    - 
+    - 
+    - tags
+    - '2015-12-30 19:49:33.586621'
+  - - 6
+    - 2
+    - 2
+    - Post
+    - 
+    - 
+    - tags
+    - '2015-12-30 19:50:03.097188'
+  - - 7
+    - 3
+    - 2
+    - Post
+    - 
+    - 
+    - tags
+    - '2015-12-30 19:50:03.102358'
+  - - 8
+    - 4
+    - 2
+    - Post
+    - 
+    - 
+    - tags
+    - '2015-12-30 19:50:03.107426'
+  - - 9
+    - 5
+    - 2
+    - Post
+    - 
+    - 
+    - tags
+    - '2015-12-30 19:50:03.113141'
+  - - 10
+    - 6
+    - 2
+    - Post
+    - 
+    - 
+    - tags
+    - '2015-12-30 19:50:03.117676'
+  - - 16
+    - 11
+    - 3
+    - Post
+    - 
+    - 
+    - tags
+    - '2015-12-30 19:50:31.549812'

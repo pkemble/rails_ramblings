@@ -9,9 +9,8 @@
 
 <% @posts.each do |post| %>
 <p>
-  <div><h3><%= link_to post.title, post %></h3></div>
-  <div><%= post.body %></div>
-  <div><%= raw post.tag_list.map { |t| link_to t, tag_path(t)}.join(", ")%></div>
+  <div class="title"><%= link_to post.title, post %></div><div class="s">
+  	(<%= raw post.tag_list.map { |t| link_to t, tag_path(t)}.join(", ")%>)</div>
   <div><%= link_to 'Edit', edit_post_path(post) %> | <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
 </p>
 <% end %>

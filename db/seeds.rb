@@ -1,7 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Post.create("title"=>"my step-daughter's birth", "body"=>"as lived vicariously through my daughter's birth. i feel i get to live through what i wasn't around for through my daughter's birth. ")
+Post.create("title"=>"the birth of my daughter has not changed me", "body"=>"as the two years i've had with my step-daughter already has. there was no 'i'm a father now' epiphany with eleanor's birth, as madeline has already given me that.")
+Post.create("title"=>"like mother like daughter", "body"=>"two pieces of burnt toast - mom convinces madeline to give her the more burnt piece, but madeline defiantly says no, but only as mom is dipping the piece in her soup. \"can i have this?\" mom asks again with the same response, \"no! I want that piece to be mine!\" but defiant mom asks, \"so I can't have this?\" mom knows there's another piece that madeline most likely won't even get all the way through. \"no no no!\" madeline protests further as mom gives in and gives the burnt toast to madeline. madeline then wants mom to eat the part that was dipped in the soup, which mom does. madeline then eats the toast, clearly not enjoying it, but she defiantly continues, despite the charred taste. like mother like daughter.")

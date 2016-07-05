@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
   get 'tags/:tag', to: 'posts#index', as: :tag
+
+	get 'signup' => 'users#new'
   
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+
   resources :posts
   resources :users
 

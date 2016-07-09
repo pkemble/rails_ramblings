@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160107141245) do
+ActiveRecord::Schema.define(version: 20160709211713) do
 
   create_table "posts", force: :cascade do |t|
     t.text     "title"
     t.text     "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
   end
 
   create_table "taggings", force: :cascade do |t|

@@ -193,8 +193,8 @@ DEPENDENCIES
   bcrypt
   bootstrap-sass
   byebug
-  capistrano (~> 3.1)
-  capistrano-rails (~> 1.1)
+  capistrano
+  capistrano-rails
   capistrano-rvm
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)

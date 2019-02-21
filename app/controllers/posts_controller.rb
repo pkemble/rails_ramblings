@@ -7,6 +7,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     if @current_user.nil?
+      byebug
       redirect_to login_path
     end
     if params[:tag]

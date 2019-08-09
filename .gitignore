@@ -19,6 +19,3 @@
 #netbeans project folder
 /nbproject
 
-#gemfile lock
-Gemfile.lock
-

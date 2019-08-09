@@ -9,6 +9,7 @@ gem 'bootstrap-sass'
 gem 'rails'
 # Use mysql as the database for Active Record
 gem 'mysql2'
+gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sassc-rails', '~> 2.1.0'
 # Use Uglifier as compressor for JavaScript assets

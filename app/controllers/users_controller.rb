@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     if @user.save(user_params)
       log_in @user
       flash[:success] = "welcome"
-      redirect_to 'posts_path'
+      redirect_to posts_path
     else
       render 'new'
     end
@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     @user = @current_user
     if @user.save(user_params)
       flash[:success] = "saved"
-      redirect_to 'posts_path'
+      redirect_to posts_path
     end
   end
 	

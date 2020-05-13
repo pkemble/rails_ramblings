@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
 	validates_length_of :password, :in => 6..20, :on => :create
 
 	has_secure_password
+  has_one_time_password
 
 	def User.digest(string)
 		cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :

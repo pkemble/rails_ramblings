@@ -4,6 +4,8 @@ gem 'acts-as-taggable-on'
 gem 'yaml_db'
 gem 'bcrypt'
 gem 'bootstrap-sass'
+gem 'active_model_otp'
+gem 'rqrcode'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'

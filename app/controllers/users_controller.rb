@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 	def show
 		@user = User.find(params[:id])
+    @qr = RQRCode::QRCode.new(@user.provisioning_uri("the marble notebook"), :size => 10, :level => :h )
 	end
 
 	def new

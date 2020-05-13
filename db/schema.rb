@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190221185850) do
+ActiveRecord::Schema.define(version: 20200513120218) do
 
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.text     "title",      limit: 65535
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20190221185850) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.string   "remember_digest"
+    t.string   "otp_secret_key"
   end
 
 end

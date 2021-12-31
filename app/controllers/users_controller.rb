@@ -1,34 +1,23 @@
 class UsersController < ApplicationController
-	def show
-		@user = User.find(params[:id])
-    @qr = RQRCode::QRCode.new(@user.provisioning_uri("the marble notebook"), :size => 10, :level => :h )
-	end
+  def activate_2fa
+    qrcode = RQRCode::QRCode.new(current_user.provisioning_uri(nil, issuer: 'your-app-url.com'), :size => 12, :level => :h)
+    @svg = qrcode.as_svg(offset: 0, color: '000', 
+                    shape_rendering: 'crispEdges', 
+                    module_size: 4)   
+    respond_to :html
+  end
 
-	def new
-		@user = User.new
-	end
-	
-	def create
-	  @user = User.new(user_params)
-    if @user.save(user_params)
-      log_in @user
-      flash[:success] = "welcome"
-      redirect_to posts_path
+  def activate_2fa_update
+    if secure_params.key?(:otp_response_code)
+      if @user.authenticate_otp(secure_params[:otp_response_code])
+        @user.otp_module_enabled!
+        # do something here
+      else
+        # do something here
+      end
     else
-      render 'new'
-    end
-	end
-  
-  def edit
-    @user = @current_user
-    if @user.save(user_params)
-      flash[:success] = "saved"
-      redirect_to posts_path
+      #turn off 2FA
+      @user.otp_module_disabled!
     end
   end
-	
-	private
-	 def user_params
-	   params.require(:user).permit(:username, :email, :password, :password_confirmation)
-	 end
 end

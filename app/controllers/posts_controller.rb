@@ -1,20 +1,21 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_action :logged_in_user
-  before_action :current_user
+  before_action :authenticate_user!
+  #before_action :current_user
 
   # GET /posts
   # GET /posts.json
   def index
-    if @current_user.nil?
-      redirect_to login_path
-    end
-    if params[:tag]
-      @posts = Post.tagged_with(params[:tag]).order(created_at: :desc).where(user_id: @current_user.id)
+    byebug
+    if current_user.nil?
+      redirect_to new_user_session_path
     else
-      @posts = Post.order(created_at: :desc).where(user_id: @current_user.id)
+      if params[:tag]
+        @posts = Post.tagged_with(params[:tag]).order(created_at: :desc).where(user_id: current_user.id)
+      else
+        @posts = Post.order(created_at: :desc).where(user_id: current_user.id)
+      end
     end
-    
   end
 
   # GET /posts/1
